@@ -186,3 +186,64 @@ input#input-email, input#input-password {
 .cadastro button {
     margin-top: 20px;
 }
+
+/* Menu */
+header button {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        font-size: 25px;
+        order: 2;
+    }
+
+    .container-card {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    /* menu */
+
+    .hide a{
+        display: none;
+        order: -1;
+    }
+
+    header button {
+        display: block;
+        order: -1;
+        border: none;
+        background: none;
+        padding-top: 10px;
+    }
+
+    header button svg {
+        fill: #5d9dc1;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    nav#menu {
+        display: grid;
+        order: 1;
+    }
+
+    nav#menu a {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+  }
